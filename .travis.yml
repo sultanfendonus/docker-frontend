@@ -3,8 +3,8 @@ sudo : required
 services : 
   - docker
 
-before_install :
-  - docker build -t sunnysultan1640/docker-frontend -f Dockerfile.dev .
+# before_install :
+#   - docker build -t sunnysultan1640/docker-frontend -f Dockerfile.dev .
 
 # script : 
 #   - docker run sunnysultan1640/docker-frontend npm run test -- --coverage

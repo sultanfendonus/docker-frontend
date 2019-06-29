@@ -9,5 +9,5 @@ before_install :
 script : 
   - docker run sunnysultan1640/docker-frontend npm run test -- --coverage
 
-after_success : 
+after_script : 
   - travis_terminate 0

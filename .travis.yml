@@ -6,8 +6,8 @@ services :
 before_install :
   - docker build -t sunnysultan1640/docker-frontend -f Dockerfile.dev .
 
-script : 
-  - docker run sunnysultan1640/docker-frontend
+# script : 
+#   - docker run sunnysultan1640/docker-frontend npm run test -- --coverage
 
 deploy : 
   provider : elasticbeanstalk
